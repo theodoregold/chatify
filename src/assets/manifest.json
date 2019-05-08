@@ -1,0 +1,58 @@
+{
+	"name": "Tabbify",
+	"description" : "Tabbify",
+	"version": "1.0",
+	"manifest_version": 2,
+
+	"icons": {
+		"128": "./img/logo.png"
+	},
+
+	"browser_action": {
+		"default_icon": "./img/logo.png",
+		"default_title": "Tabbify"
+	},
+
+	"omnibox": {
+		"keyword": "tbfy"
+	},
+
+	"permissions": [
+		"tabs",
+		"sessions",
+		"storage",
+		"identity",
+		"*://*/*"
+	],
+
+	"content_scripts": [{
+		"matches": ["*://*/*"],
+		"js": ["js/content.js"]
+	}],
+
+	"background": {
+		"scripts": ["js/event.js"],
+		"persistent": true
+	},
+
+	"web_accessible_resources": [
+		"index.html"
+	],
+
+	"chrome_url_overrides" : {
+		"newtab": "index.html"
+	},
+
+	"commands": {
+		"_execute_browser_action": {
+			"suggested_key": {
+				"default": "Ctrl+S",
+				"mac": "Ctrl+S"
+			},
+			"description": "Tabbify"
+		}
+	},
+
+	"content_security_policy": "default-src 'self'; script-src 'self' http://localhost:8080 https://localhost:8080 http://localhost:3030 https://tabbify.herokuapp.com https://api.unsplash.com 'unsafe-eval'; connect-src http://localhost:8080 https://localhost:8080 http://localhost:3030 https://tabbify.herokuapp.com https://api.unsplash.com; style-src * 'unsafe-inline' 'self' blob:; img-src *;"
+
+}

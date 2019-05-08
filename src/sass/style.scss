@@ -1,0 +1,15 @@
+// reset
+@import "partials/_reset.scss";
+
+
+// modules
+@import "mixins/_placeholder.scss";
+@import "mixins/_media.scss";
+
+
+// partials
+@import "partials/_grid.scss";
+@import "partials/_colors.scss";
+@import "partials/_typography.scss";
+@import "partials/_animations.scss";
+@import "partials/_base.scss";

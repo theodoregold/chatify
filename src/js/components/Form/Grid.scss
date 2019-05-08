@@ -1,0 +1,31 @@
+@import "partials/grid";
+@import "mixins/media";
+
+
+.FormGrid {
+	margin-bottom: 12px;
+	display: grid;
+	clear: both;
+	width: 100%;
+	float: left;
+
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+	grid-column-gap: 8px;
+	grid-row-gap: 8px;
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
+
+
+	// ---------------------- phone mediaq
+	@include media($phone) {
+	}
+	// ---------------------- tablet mediaq
+	@include media($tablet) {
+	}
+	// ---------------------- desktop mediaq
+	@include media($desktop) {
+	}
+}

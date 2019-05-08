@@ -1,0 +1,27 @@
+@import "partials/grid";
+@import "mixins/media";
+
+
+.Form {
+	width: 100%;
+	float: left;
+	
+
+	.Button {
+		max-width: 160px;
+		margin: 24px auto 0 auto;
+		float: none;
+	}
+
+
+	// ---------------------- phone mediaq
+	// @media($phone) {
+	@include media($phone) {
+	}
+	// ---------------------- tablet mediaq
+	@include media($tablet) {
+	}
+	// ---------------------- desktop mediaq
+	@include media($desktop) {
+	}
+}

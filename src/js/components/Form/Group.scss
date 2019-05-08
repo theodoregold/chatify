@@ -1,0 +1,76 @@
+@import "partials/grid";
+@import "mixins/media";
+
+
+.FormGroup {
+	margin-bottom: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+	clear: both;
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
+
+	& > div {
+		margin-top: 12px;
+
+		&:first-child {
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+	}
+
+	& > .InputRadio,
+	& > .InputCheckbox {
+		margin-top: 0px;
+	}
+
+	p {
+		font-size: 14px;
+		margin-bottom: 8px;
+		width: 100%;
+		float: left;
+	}
+
+	&--Small {
+		margin-bottom: 8px;
+	}
+
+	&--Float {
+		display: block;
+		float: left;
+		width: 100%;
+
+		& > div {
+			margin-left: 0;
+		}
+	}
+
+	// ---------------------- phone mediaq
+	@include media($phone) {
+		& > div {
+			flex: 1 1;
+			margin-left: 8px;
+			margin-top: 0px;
+		}
+
+		&--Float > div {
+			margin-left: 0;
+		}
+
+		&--Row > div {
+			flex: 0 0 100%;
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+	// ---------------------- tablet mediaq
+	@include media($tablet) {
+	}
+	// ---------------------- desktop mediaq
+	@include media($desktop) {
+	}
+}

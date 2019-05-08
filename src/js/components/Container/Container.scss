@@ -1,0 +1,27 @@
+@import 'partials/grid';
+@import 'mixins/media';
+
+
+
+.Container {
+	padding: 0 20px;
+	width: 100%;
+	height: auto;
+	max-width: 1080px;
+	margin: 0 auto;
+	flex-shrink: 1;
+	flex-grow: 0;
+	flex-direction: row;
+
+	&--Tiny {
+		max-width: 320px;
+	}
+
+	&--Small {
+		max-width: 360px;
+	}
+
+	&--Medium {
+		max-width: 560px;
+	}
+}

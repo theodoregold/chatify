@@ -1,0 +1,65 @@
+@import 'partials/colors';
+@import 'partials/grid';
+@import 'mixins/media';
+
+
+
+.ChatListScreen {
+	min-height: 100vh;
+	height: auto;
+
+	.Screen__Wrap {
+		min-height: 100vh;
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		overflow: auto;
+		flex: 1;
+	}
+
+	&__Nav {
+		margin-bottom: auto;
+	}
+
+	&__Disconnect {
+		margin-left: auto;
+		line-height: 32px;
+
+		.Button {
+			float: right;
+		}
+	}
+
+	&__Section {
+		padding: 104px 0 100px 0;
+	}
+
+	&__Container {
+		max-width: 560px;
+	}
+
+	&__Column {
+		float: right;
+	}
+
+
+	// ---------------------- phone mediaq
+	@include media($phone) {
+	}
+	// ---------------------- tablet mediaq
+	@include media($tablet) {
+		&__Section {
+			padding: 160px 0 164px 0;
+		}
+	}
+	// ---------------------- desktop mediaq
+	@include media($desktop) {
+		
+	}
+	// ---------------------- tv mediaq
+	@include media($tv) {
+		&__Section {
+			padding: 160px 0 192px 0;
+		}
+	}
+}

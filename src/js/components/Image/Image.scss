@@ -1,0 +1,26 @@
+.Image {
+	background: #f0f0f0;
+
+	&__Image {
+		opacity: 0;
+	}
+
+	&--Loaded, &--Cached {
+		background: transparent;
+
+		.Image__Image {
+			opacity: 1;	
+		}
+	}
+
+	&--Loaded {
+		transition:
+			background 0.2s;
+
+		.Image__Image {
+			transition:
+				transform 0.4s,
+				opacity 0.2s;
+		}
+	}
+}

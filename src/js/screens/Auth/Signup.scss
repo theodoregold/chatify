@@ -1,0 +1,33 @@
+.AuthSignupScreen {
+	.Form {
+		margin-bottom: 32px;
+	}
+
+	&__Login {
+		margin-left: auto;
+		line-height: 32px;
+	}
+
+	&__Column {
+		float: right;
+	}
+
+	.Nav {
+		.Container {
+			padding: 0 80px;
+		}
+	}
+
+	.FormNote {
+		margin: 0;
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+		font-size: 14px;
+
+		.ButtonLink {
+			font-size: 14px;
+		}
+	}
+}

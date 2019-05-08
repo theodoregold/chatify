@@ -1,0 +1,46 @@
+@import 'partials/colors';
+@import 'partials/typography';
+
+
+
+@keyframes spin {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}
+
+.Loader {
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin: -12px 0 0 -12px;
+	border-radius: 20px;
+	border: 2px solid #fff;
+	border-bottom-color: transparent;
+	animation: spin 0.4s infinite cubic-bezier(0.3, 0.1, 0.2, 0.3);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	&--Small {
+		width: 20px;
+		height: 20px;
+		margin: -10px 0 0 -10px;
+	}
+
+	&--Large {
+		width: 40px;
+		height: 40px;
+		margin: -20px 0 0 -20px;
+	}
+
+	&--Dark {
+		border-color: #212121;
+		border-bottom-color: transparent;
+	}
+
+	&--Static {
+		position: initial;
+		clear: both;
+		margin: 80px auto;
+	}
+}

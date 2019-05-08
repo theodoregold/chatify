@@ -1,0 +1,39 @@
+@import "partials/grid";
+@import "mixins/media";
+
+
+.ToastSection {
+	z-index: 5000;
+	display: block;
+	bottom: 32px;
+	right: 40px;
+	// right: 24px;
+	left: 24px;
+	position: fixed;
+	pointer-events: none;
+
+	// & > *:nth-child(n+4) {
+	// 	opacity: 0;
+	// 	visibility: hidden;
+	// 	max-height: 0px;
+	// 	z-index: 5;
+	// }
+
+	.Toast {
+		float: right;
+		clear: both;
+		max-width: 320px;
+		pointer-events: auto;
+	}
+
+
+	// ---------------------- phone mediaq
+	@include media($phone) {
+	}
+	// ---------------------- tablet mediaq
+	@include media($tablet) {
+	}
+	// ---------------------- desktop mediaq
+	@include media($desktop) {
+	}
+}

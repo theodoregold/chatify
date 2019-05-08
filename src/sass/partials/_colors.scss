@@ -1,0 +1,49 @@
+// --------------------------------------------
+// colors
+
+$base : #f2f2f2; // barely light
+$base-text : #565656; // light grey
+$base-heading : #111111; // darkish grey
+
+// main colors
+$primary : #FFC145;
+$secondary : #FF6B6C;
+$tertiary : #3743E1;
+
+// nav
+$secondary-light : #fce5e5;
+$secondary-dark : #682f39;
+
+// input
+$input-bg : #F5F7F7;
+$input-text : rgba(#20343D, 0.8);
+$input-label : rgba(#7A8387, 0.7);
+$input-error : #de4a4a;
+$focus-bg : #FAF4E6;
+$focus-text : #362E1C;
+$focus-label : #BB773C;
+$focus-error : #de4a4a;
+
+// button
+$button-bg : $primary;
+$button-text : #FFFFFF;
+$button-danger-bg : #D61E1E;
+$button-secondary-bg : #212121;
+
+// toast
+$toast-bg : #2D2C30;
+$toast-bg-success : #89cc48;
+$toast-bg-error : #E33535;
+
+// special
+$success-bg : #daf8ca;
+$success-text : #4f694b;
+$info-bg : #cfebef;
+$info-text : #436d81;
+$warning-bg : #f9f0b5;
+$warning-text : #625742;
+$error-bg : #f2d9d9;
+$error-text : #8c3d3d;
+
+// external
+$facebook : #4267b2;

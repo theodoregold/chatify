@@ -1,0 +1,16 @@
+.Paragraph {
+	font-size: 16px;
+	margin-bottom: 24px;
+
+	&--Small {
+		font-size: 14px;
+	}
+
+	&--Large {
+		font-size: 18px;
+	}
+
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}

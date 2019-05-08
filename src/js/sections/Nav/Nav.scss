@@ -1,0 +1,63 @@
+@import 'partials/colors';
+@import 'partials/grid';
+@import 'mixins/media';
+
+
+
+.Nav {
+	width: 100%;
+	float: left;
+	padding: 12px 0;
+	height: 56px;
+	background: #fff;
+	border-bottom: 1px solid #E9E9E9;
+
+	&__Container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&--Fixed {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 1000;
+	}
+
+	&--Transparent {
+		background: transparent;
+	}
+
+	.Logo {
+		margin: -10px 0;
+		margin-right: auto;
+
+		svg {
+			height: 52px;
+		}
+	}
+
+	.Control {
+		margin-left: auto;
+	}
+
+	.User {
+		margin: -4px 0;
+		margin-left: auto;
+	}
+
+
+	// ---------------------- phone mediaq
+	@include media($phone) {
+	}
+	// ---------------------- tablet mediaq
+	@include media($tablet) {
+	}
+	// ---------------------- desktop mediaq
+	@include media($desktop) {
+		padding: 24px 0;
+		height: 80px;
+	}
+}

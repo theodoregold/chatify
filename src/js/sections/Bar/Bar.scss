@@ -1,0 +1,47 @@
+@import 'partials/colors';
+@import 'partials/grid';
+@import 'mixins/media';
+
+
+
+.Bar {
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	padding: 0;
+
+	&__Container {
+		max-width: 560px;
+	}
+
+	&__Form {
+		margin: 0;
+		float: none;
+	}
+
+	&__Wrap {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+
+	// ---------------------- phone mediaq
+	@include media($phone) {
+	}
+	// ---------------------- tablet mediaq
+	@include media($tablet) {
+		&__Wrap {
+			margin-bottom: 64px;
+		}
+	}
+	// ---------------------- desktop mediaq
+	@include media($desktop) {
+	}
+	// ---------------------- tv mediaq
+	@include media($tv) {
+		&__Wrap {
+			margin-bottom: 80px;
+		}
+	}
+}

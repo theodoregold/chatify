@@ -1,0 +1,36 @@
+@import "partials/colors";
+
+
+
+.Panel {
+	margin-bottom: 24px;
+	width: 100%;
+	padding: 56px 56px;
+	border-radius: 15px;
+	float: left;
+	font-size: 14px;
+	text-align: center;
+
+	background-color: #efefef;
+	color: #676767;
+
+	&--Success {
+		background-color: rgba($success-bg, 0.6);
+		color: $success-text;
+	}
+
+	&--Info {
+		background-color: rgba($info-bg, 0.6);
+		color: $info-text;
+	}
+	
+	&--Warning {
+		background-color: rgba($warning-bg, 0.6);
+		color: $warning-text;
+	}
+
+	&--Error {
+		background-color: rgba($error-bg, 0.6);
+		color: $error-text;
+	}
+}

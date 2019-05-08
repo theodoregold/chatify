@@ -1,0 +1,20 @@
+.Divider {
+	width: 100%;
+	height: 1px;
+	background: #eee;
+	width: 100%;
+	margin: 12px auto;
+
+	&--Small {
+		width: 32px;
+	}
+
+	&--Form {
+		margin: 0 auto;
+	}
+
+	&--Horizontal {
+		height: 100%;
+		width: 1px;
+	}
+}
