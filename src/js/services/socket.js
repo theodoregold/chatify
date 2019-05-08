@@ -44,7 +44,7 @@ export const connect = () => {
 	return new Promise((resolve, reject) => {
 		const token = sessionHelper.get();
 
-		connection = new WebSocket("ws://localhost:3031", token);
+		connection = new WebSocket(CONFIG.ws, token);
 
 		connection.onopen = open(resolve);
 		connection.onmessage = message;
