@@ -1,5 +1,5 @@
 export default {
 	name: "Chatify",
 
-	api: "https://chatify-app.herokuapp.com/",
+	api: "https://chatify-backend.herokuapp.com/",
 };

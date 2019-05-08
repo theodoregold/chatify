@@ -1,7 +1,7 @@
 This is front-end part **Chatify** car rental service mini-app. You can find [back-end part here](https://github.com/theodoregold/chatify-backend) and [task description here](https://github.com/theodoregold/chatify-frontend/blob/master/TASK.md).
 
 ## Demo
-[https://nervous-wescoff-c939c4.netlify.com/](https://nervous-wescoff-c939c4.netlify.com/)
+[https://optimistic-saha-ab65d9.netlify.com/](https://optimistic-saha-ab65d9.netlify.com/)
 
 ## Note
 Project is build using my personal boilerplate and custom components. I acknowledge that using Redux might be an overkill for this project. I also took some creative UI/UX liberties. Most importantly, I didn't redirect the user to the landing page after closed connection. For me, it makes more sense for the user to have access to his conversation.
